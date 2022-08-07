@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>关于</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1,user-scalable=no">
+    <meta http-equiv= "Pragma" content= "no-cache" />
+ <meta http-equiv= "Cache-Control" content= "no-cache" />
+  <meta http-equiv= "Expires" content= "0" />
+</head>
+
+<style>
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .wrapper{
+        text-align: center;
+        padding-top: 20px;
+        max-width: 960px;
+        margin: 0px auto;
+    }
+    body{
+        background: #f7f8fa;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    p{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    a{
+    	text-decoration:none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .button{
+        border: 0px;
+        border-radius: 25px;
+        background: rgb(193,39,45);
+        color: #ffffff;
+        padding: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size:20px;
+        margin: 0px auto;
+        margin-top:40px;
+        width: 100px;
+    }
+    .tip{
+        text-align: left;
+        margin: auto 50px;
+        text-indent: 2em;
+    }
+    @media screen and (max-width:1080px){
+        .tip{
+            margin: auto 10px;
+        }
+        h3{
+            margin: 20px 10px !important;
+        }
+
+        .sss{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sss img{
+            margin: 10px auto;
+            width: 200px !important;
+            height: 400px !important;
+        }
+    }
+    .sss img{
+        width: 150px;
+        height: 300px;
+    }
+    .footer{
+        color: gray;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        max-width: 960px;
+    }
+    .footer a{
+        color: gray;
+        margin: 0px 5px;
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <img src="app_logo.png" height="100px" height="100px" />
+        <h1 style="font-size:25px" id="title">微哈师</h1>
+        <!-- <h3 style="text-align: left;margin: 20px 50px;">应用简介</h3> -->
+        <p class="tip">微哈师是一款致力于使哈尔滨师范大学的同学的学习生活更加便捷的Android APP，具有查询成绩与课程表等功能。</p>
+        <a class="download-wrapper" href="https://storage.devmeteor.cn/whs/package/WeiHaShi.apk"><div class="button">下载</div></a>
+        <p>Meteor出品</p>
+        <div class="footer"><a href="agreement.html">用户协议</a>|<a href="privacy.html">隐私政策</a></div>
+    </div>
+    <script type="text/javascript">
+        if(window.whsInterface){
+            document.getElementById("title").innerHTML='微哈师'+window.whsInterface.getVersionName()
+        }
+    </script>
+</body>
+
+</html>
